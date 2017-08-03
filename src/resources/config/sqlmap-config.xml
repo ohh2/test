@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <!-- 命名空间 -->
+    <typeAliases>
+        <typeAlias alias="log" type="com.yunzle.fkm.model.Log"/>
+        <typeAlias alias="file" type="com.yunzle.fkm.model.File"/>
+        <typeAlias alias="thematic" type="com.yunzle.fkm.model.Thematic"/>
+        <typeAlias alias="comment" type="com.yunzle.fkm.model.Comment"/>
+        <typeAlias alias="description" type="com.yunzle.fkm.model.Description"/>
+        <typeAlias alias="commonresources" type="com.yunzle.fkm.model.CommonResources"/>
+        <typeAlias alias="resources" type="com.yunzle.fkm.model.Resources"/>
+        <typeAlias alias="article" type="com.yunzle.fkm.model.Article"/>
+        <typeAlias alias="classification" type="com.yunzle.fkm.model.Classification"/>
+        <typeAlias alias="tag" type="com.yunzle.fkm.model.Tag"/>
+        <typeAlias alias="taskhelp" type="com.yunzle.fkm.model.TaskHelp"/>
+        <typeAlias alias="resourcestag" type="com.yunzle.fkm.model.ResourcesTag"/>
+        <typeAlias alias="details" type="com.yunzle.fkm.model.Details"/>
+        <typeAlias alias="score" type="com.yunzle.fkm.model.Score"/>
+        <typeAlias alias ="praise" type="com.yunzle.fkm.model.Praise"/>
+        <typeAlias alias="dictionarydate" type="com.yunzle.fkm.model.DictionaryDate"/>
+        <typeAlias alias="creditrecord" type="com.yunzle.fkm.model.CreditRecord"/>
+        <typeAlias alias="mycollection" type="com.yunzle.fkm.model.MyCollection"/>
+        <typeAlias alias="user" type="com.yunzle.fkm.model.User"/>
+        <typeAlias alias="reply" type="com.yunzle.fkm.model.Reply"/>
+        <typeAlias alias="individualHomepage" type="com.yunzle.fkm.model.IndividualHomepage"/>
+        <typeAlias alias="reward" type="com.yunzle.fkm.model.Reward"/>
+        <typeAlias alias="report" type="com.yunzle.fkm.model.Report"/>
+        <typeAlias alias="rewardReply" type="com.yunzle.fkm.model.RewardReply"/>
+        <typeAlias alias="classificationTag"  type="com.yunzle.fkm.model.ClassificationTag"/>
+        <typeAlias alias="interest" type="com.yunzle.fkm.model.Interest"/>
+        <typeAlias alias="clickRate" type="com.yunzle.fkm.model.ClickRate"/>
+        <typeAlias alias="userInformation" type="com.yunzle.fkm.model.UserInformation"/>
+        <typeAlias alias="banner" type="com.yunzle.fkm.model.Banner"/>
+        <typeAlias alias="invite" type="com.yunzle.fkm.model.Invite"/>
+        <typeAlias alias="Topic" type="com.yunzle.fkm.model.Topic"/>
+        <typeAlias alias="Integralrule" type="com.yunzle.fkm.model.IntegralRule"/>
+        <typeAlias alias="operationType" type="com.yunzle.fkm.model.OperationType"/>
+    </typeAliases>
+
+    <!-- 映射map -->
+    <mappers>
+
+    </mappers>
+</configuration>
