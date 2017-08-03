@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>fkm</groupId>
-  <artifactId>fkm</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>fkm Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>qbform</groupId>
+    <artifactId>qbform</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>qbform Maven Webapp</name>
+    <url>http://maven.apache.org</url>
     <properties>
         <!-- spring版本号 -->
         <spring.version>4.1.2.RELEASE</spring.version>
@@ -105,7 +105,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
         <!-- 阿里巴巴数据源包 -->
         <dependency>
@@ -113,17 +113,6 @@
             <artifactId>druid</artifactId>
             <version>1.0.2</version>
         </dependency>
-        <dependency>
-            <groupId>com.aliyun</groupId>
-            <artifactId>aliyun-java-sdk-core</artifactId>
-            <version>2.4.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.aliyun</groupId>
-            <artifactId>aliyun-java-sdk-sms</artifactId>
-            <version>3.0.0-rc1</version>
-        </dependency>
-
 
         <!-- json数据 -->
         <!--<dependency>-->
@@ -179,20 +168,9 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.5.6</version>
-        </dependency>
         <!-- log end -->
 
 
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.12.6</version>
-            <type>jar</type>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -210,29 +188,14 @@
             <artifactId>commons-logging</artifactId>
             <version>1.1.2</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.solr</groupId>
-            <artifactId>solr-solrj</artifactId>
-            <version>5.3.0</version>
-        </dependency>
-<!-- word 分词-->
-        <dependency>
-            <groupId>org.apdplat</groupId>
-            <artifactId>word</artifactId>
-            <version>1.1</version>
-        </dependency>
+
         <!-- 提供对c标签的支持 -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
-        <!-- pdfbox -->
-        <dependency>
-            <groupId>org.apache.pdfbox</groupId>
-            <artifactId>pdfbox</artifactId>
-            <version>1.8.4</version>
-        </dependency>
+
         <!-- shiro配置 -->
         <dependency>
             <groupId>commons-collections</groupId>
@@ -263,12 +226,7 @@
             <artifactId>shiro-quartz</artifactId>
             <version>1.2.3</version>
         </dependency>
-        <!--阿里巴巴Json字符串-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.29</version>
-        </dependency>
+
         <!-- guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -318,13 +276,14 @@
         </dependency>
 
 
+
         <!-- ueditor -->
         <dependency>
             <groupId>ueditor</groupId>
             <artifactId>ueditor</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/ueditor-mini.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/ueditor-1.1.2.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>javax.mail</groupId>
@@ -332,20 +291,8 @@
             <version>1.4.3</version>
         </dependency>
 
-        <!-- jacob -->
-        <dependency>
-            <groupId>jacob</groupId>
-            <artifactId>jacob</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/jacob.jar</systemPath>
-        </dependency>
-        <!--prettytime -->
-        <dependency>
-            <groupId>org.ocpsoft.prettytime</groupId>
-            <artifactId>prettytime</artifactId>
-            <version>4.0.0.Final</version>
-        </dependency>
+
+
         <!-- poi excel -->
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -358,27 +305,164 @@
             <version>3.10-FINAL</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-scratchpad</artifactId>
-            <version>3.10-FINAL</version>
-        </dependency>
-        <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>1.8.3</version>
-        </dependency>
-        <dependency>
-            <groupId>com.belerweb</groupId>
-            <artifactId>pinyin4j</artifactId>
-            <version>2.5.0</version>
         </dependency>
         <!--<dependency>-->
         <!--<groupId>org.apache.commons</groupId>-->
         <!--<artifactId>commons-lang3</artifactId>-->
         <!--<version>3.1</version>-->
         <!--</dependency>-->
-    </dependencies>
-  <build>
-    <finalName>fkm</finalName>
-  </build>
+
+        <!-- jfinal -->
+        <dependency>
+            <groupId>com.jfinal</groupId>
+            <artifactId>jfinal</artifactId>
+            <version>1.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jfinal</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>8.1.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/jetty-server-8.1.8.jar</systemPath>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>3.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>fr.opensagres.xdocreport</groupId>
+            <artifactId>org.apache.poi.xwpf.converter.core</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>fr.opensagres.xdocreport</groupId>
+            <artifactId>org.apache.poi.xwpf.converter.xhtml</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!-- html dom 处理jar -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.8.3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/jsoup-1.8.3.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-sms</artifactId>
+            <version>3.0.0-rc1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-core</artifactId>
+            <version>3.6.0</version>
+        </dependency>
+        <!--&lt;!&ndash;自己利用jar包添加到maven本地仓库  &ndash;&gt;-->
+        <!--<dependency>-->
+        <!--<groupId>com.janeluo</groupId>-->
+        <!--<artifactId>ik-analyzer</artifactId>-->
+        <!--<version>2012_u6</version>-->
+        <!--</dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/com.janeluo/ikanalyzer -->
+        <dependency>
+            <groupId>com.janeluo</groupId>
+            <artifactId>ikanalyzer</artifactId>
+            <version>2012_u6</version>
+        </dependency>
+
+
+    <dependency>
+        <groupId>org.activiti</groupId>
+        <artifactId>activiti-engine</artifactId>
+        <version>5.21.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.activiti</groupId>
+        <artifactId>activiti-spring</artifactId>
+        <version>5.21.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy-all</artifactId>
+        <version>2.4.3</version>
+    </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.apache.commons</groupId>-->
+        <!--<artifactId>commons-lang3</artifactId>-->
+        <!--<version>3.1</version>-->
+        <!--</dependency>-->
+
+        <!--httpclient  4.1.2 maven require-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/httpclient-4.3.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient-cache</artifactId>
+            <version>4.3.3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/httpclient-cache-4.3.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>4.3.3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/httpmime-4.3.3.jar</systemPath>
+        </dependency>
+        <!--阿里巴巴Json字符串-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.29</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
+        </dependency>
+
 </project>
